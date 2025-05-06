@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilse's Reisverrassingen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f9f2;
+      color: #2e4d2f;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+      border: 1px solid #d1e7d4;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .hidden-content {
+      display: none;
+      margin-top: 15px;
+    }
+    button {
+      background-color: #6bbf59;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #59a44b;
+    }
+  </style>
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <h1>🌏 Ilse’s Reisverrassingen</h1>
+  <p>Klik op de knoppen om je verrassing te openen op het juiste moment ✨</p>
+
+  <!-- Voorbeeldsectie - Luchthaven -->
+  <div class="section">
+    <h2>✈ Open als je op de luchthaven wacht</h2>
+    <button onclick="toggleContent('content1')">Toon verrassing</button>
+    <div id="content1" class="hidden-content">
+      <p>Het avontuur begint! Terwijl je wacht op je vlucht, bedenk waar je naartoe gaat... Ik ben zo trots op je en hoop dat deze reis je onvergetelijke momenten brengt!</p>
+    </div>
+  </div>
+
+  <!-- Eerste maaltijd -->
+  <div class="section">
+    <h2>🍜 Open als je je eerste lokale maaltijd eet</h2>
+    <button onclick="toggleContent('content2')">Toon verrassing</button>
+    <div id="content2" class="hidden-content">
+      <p>Eten is herinneringen maken! Geniet van elke hap. Vergeet niet om een foto te maken en me te laten weten hoe het smaakte!</p>
+    </div>
+  </div>
+
+  <!-- Uitzicht -->
+  <div class="section">
+    <h2>🌅 Open als je een prachtig uitzicht ziet</h2>
+    <button onclick="toggleContent('content3')">Toon verrassing</button>
+    <div id="content3" class="hidden-content">
+      <p>Stop. Adem in. Kijk om je heen. Dit moment is van jou. Beschrijf in drie woorden wat je nu voelt.</p>
+    </div>
+  </div>
+
+  <!-- Heimwee -->
+  <div class="section">
+    <h2>🏡 Open als je heimwee krijgt</h2>
+    <button onclick="toggleContent('content4')">Toon verrassing</button>
+    <div id="content4" class="hidden-content">
+      <p>Ik weet dat reizen geweldig is, maar soms voelt thuis even te ver weg... Ik ben hier voor je 💚</p>
+      <p>🎶 Luister naar <a href="https://www.youtube.com/watch?v=5_IP2m49IE4" target="_blank">Hans De Booij – Annabel</a></p>
+    </div>
+  </div>
+
+  <!-- Grappige momenten -->
+  <div class="section">
+    <h2>😂 Open als je iets grappigs meemaakt</h2>
+    <button onclick="toggleContent('content5')">Toon verrassing</button>
+    <div id="content5" class="hidden-content">
+      <p>Lachen maakt alles beter! Wat is er gebeurd? Stuur me een berichtje, zodat ik mee kan lachen!</p>
+      <p><em>Waarom nemen reizigers een potlood mee?</em><br>Voor het geval ze in een schrijvende storm terechtkomen! ✏️😂</p>
+    </div>
+  </div>
+
+  <!-- Thuiskomst -->
+  <div class="section">
+    <h2>🎉 Open als je thuiskomt</h2>
+    <button onclick="toggleContent('content6')">Toon verrassing</button>
+    <div id="content6" class="hidden-content">
+      <p>Welkom terug, wereldreiziger! Je hebt nieuwe verhalen, ervaringen en herinneringen gemaakt. Laten we snel een moment plannen om ze te delen!</p>
+      <audio controls>
+        <source src="welkom-thuis.mp3" type="audio/mpeg">
+        Jouw browser ondersteunt geen audio afspelen.
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>
